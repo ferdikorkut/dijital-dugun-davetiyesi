@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="format-detection" content="telephone=no">
+    <title>[Gelin Adı] & [Damat Adı] - Düğün Davetiyesi</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <audio id="bgMusic" loop src="assets/audio/silence.wav"></audio>
+    <div class="music-disc" id="musicBtn"><i class="fas fa-compact-disc"></i></div>
+
+    <div id="bg-opening" class="bg-layer">
+        <div class="dark-overlay" style="background: rgba(0,0,0,0.3);"></div>
+        <img src="assets/images/background.jpg" class="bg-img" id="img-opening" alt="">
+    </div>
+
+    <div id="opening-content">
+        <div class="uk-container">
+            <p class="opening-eyebrow">Evleniyoruz</p>
+            <h1 class="shimmer-gold hero-title-name">[Gelin Adı]<br><span class="font-script amp">&amp;</span><br>[Damat Adı]</h1>
+            <div class="guest-box">
+                <p class="guest-label">Sayın:</p>
+                <h3 id="guestName" class="guest-name">Değerli Dostumuz</h3>
+            </div>
+            <div><button class="btn-open" id="openBtn" type="button">Davetiyeyi Aç</button></div>
+        </div>
+    </div>
+
+    <div id="bg-main" class="bg-layer">
+        <div class="dark-overlay"></div>
+        <img src="assets/images/background.jpg" class="bg-img" id="img-main" alt="">
+    </div>
+
+    <nav class="nav-bar" id="navbar">
+        <a href="#home" class="nav-item active"><i class="fas fa-home"></i></a>
+        <a href="#couple" class="nav-item"><i class="fas fa-heart"></i></a>
+        <a href="#event" class="nav-item"><i class="fas fa-calendar-alt"></i></a>
+        <a href="#gallery" class="nav-item"><i class="fas fa-images"></i></a>
+    </nav>
+
+    <main id="main-content">
+        <section id="home" class="full-screen uk-flex uk-flex-middle uk-flex-center uk-text-center">
+            <div class="uk-container">
+                <div class="gs-anim"><span class="vertical-line"></span></div>
+                <p class="hero-subtitle gs-anim">Düğün Merasimi</p>
+                <h1 class="hero-title-name shimmer-gold gs-anim">[Gelin Adı] <span class="font-script amp-inline">&amp;</span> [Damat Adı]</h1>
+                <div class="gs-anim divider-line"></div>
+                <p class="hero-date gs-anim">[DÜĞÜN GÜNÜ], [DÜĞÜN TARİHİ]</p>
+                <p class="hero-location gs-anim">[ŞEHİR], TÜRKİYE</p>
+                <p class="hero-quote gs-anim">
+                    "[Buraya birbirinize dair özel bir söz, şiir<br>
+                    veya anı yazabilirsiniz.<br>
+                    Bu satırlar sizin hikayenizi anlatsın.]"
+                </p>
+                <div class="scroll-indicator gs-anim">
+                    <p>AŞAĞI KAYDIR</p>
+                    <i class="fas fa-chevron-down fa-bounce"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="couple" class="uk-section">
+            <div class="uk-container">
+                <h2 class="text-title gs-anim">Gelin &amp; Damat</h2>
+                <div class="mini-couple-grid">
+                    <div class="couple-divider">&amp;</div>
+                    <div class="mini-card gs-anim-left">
+                        <div class="mini-frame">
+                            <div class="mini-img-wrapper"><img src="assets/images/bride.svg" alt="[Gelin Adı]"></div>
+                        </div>
+                        <h3 class="mini-name">[Gelin Adı]</h3>
+                        <p class="mini-parent">[Gelin Annesi] &amp; [Gelin Babası]'nın Kızı</p>
+                    </div>
+                    <div class="mini-card gs-anim-right">
+                        <div class="mini-frame">
+                            <div class="mini-img-wrapper"><img src="assets/images/groom.svg" alt="[Damat Adı]"></div>
+                        </div>
+                        <h3 class="mini-name">[Damat Adı]</h3>
+                        <p class="mini-parent">[Damat Annesi] &amp; [Damat Babası]'nın Oğlu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="uk-section uk-padding-remove-top">
+            <div class="uk-container uk-container-small uk-text-center">
+                <h3 class="text-title countdown-title gs-anim">Büyük Güne Kalan</h3>
+                <div class="countdown-wrapper gs-anim">
+                    <div class="cd-box"><div class="cd-number" id="cd-days">00</div><div class="cd-label">GÜN</div></div>
+                    <div class="cd-box"><div class="cd-number" id="cd-hours">00</div><div class="cd-label">SAAT</div></div>
+                    <div class="cd-box"><div class="cd-number" id="cd-minutes">00</div><div class="cd-label">DK</div></div>
+                    <div class="cd-box"><div class="cd-number" id="cd-seconds">00</div><div class="cd-label">SN</div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="event" class="uk-section">
+            <div class="uk-container uk-container-small uk-text-center">
+                <h2 class="text-title gs-anim">Merasim Detayları</h2>
+                <div class="glass-box event-grid-wrap gs-anim">
+                    <div class="uk-grid-divider uk-child-width-1-1 uk-child-width-1-2@s event-grid" uk-grid>
+                        <div class="event-card">
+                            <i class="fas fa-ring event-icon"></i>
+                            <h3 class="event-title">Kına</h3>
+                            <div class="event-datetime">
+                                <span class="event-date">[KINA TARİHİ]</span><br>
+                                <span class="font-script event-time">[KINA SAATİ]</span><br>
+                                <span class="event-day">[KINA GÜNÜ]</span>
+                            </div>
+                            <p class="event-venue">
+                                <strong>[KINA MEKAN ADI]</strong><br>
+                                <span class="event-address">[KINA ADRES]</span>
+                            </p>
+                            <div class="event-cta">
+                                <!-- DÜZENLE: Google Maps konum linkini buraya yapıştırın -->
+                                <a href="#" target="_blank" class="map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> Konum Gör
+                                </a>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <i class="fas fa-glass-cheers event-icon"></i>
+                            <h3 class="event-title">Düğün Merasimi</h3>
+                            <div class="event-datetime">
+                                <span class="event-date">[DÜĞÜN TARİHİ]</span><br>
+                                <span class="font-script event-time">[DÜĞÜN SAATİ]</span><br>
+                                <span class="event-day">[DÜĞÜN GÜNÜ]</span>
+                            </div>
+                            <p class="event-venue">
+                                <strong>[DÜĞÜN MEKAN ADI]</strong><br>
+                                <span class="event-address">[DÜĞÜN ADRES]</span>
+                            </p>
+                            <div class="event-cta">
+                                <!-- DÜZENLE: Google Maps konum linkini buraya yapıştırın -->
+                                <a href="#" target="_blank" class="map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> Konum Gör
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="uk-section">
+            <div class="uk-container">
+                <h2 class="text-title gs-anim">Hatıralarımız</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item gs-gallery">
+                        <div class="gallery-frame">
+                            <img src="assets/images/gallery-1.svg" alt="Fotoğraf 1">
+                            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="gallery-item gs-gallery">
+                        <div class="gallery-frame">
+                            <img src="assets/images/gallery-2.svg" alt="Fotoğraf 2">
+                            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="gallery-item gs-gallery">
+                        <div class="gallery-frame">
+                            <img src="assets/images/gallery-3.svg" alt="Fotoğraf 3">
+                            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="gallery-item gs-gallery">
+                        <div class="gallery-frame">
+                            <img src="assets/images/gallery-4.svg" alt="Fotoğraf 4">
+                            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-section">
+            <div class="uk-container uk-container-small">
+                <div class="footer-ornament">❖</div>
+                <p class="footer-subtitle">Sizleri de Aramızda Görmekten Onur Duyarız</p>
+                <div class="footer-divider"></div>
+                <h2 class="footer-names">[Gelin Adı] &amp; [Damat Adı]</h2>
+                <div class="footer-family">
+                    <p>Bu mutlu günümüzde yanımızda olacak tüm dostlarımıza şimdiden teşekkür ederiz.</p>
+                    <p class="footer-italic">Sevgi ve Saygılarımızla...</p>
+                </div>
+                <div class="footer-ornament">❖</div>
+                <div class="footer-host">
+                    <p class="footer-subtitle footer-host-label">Davet Edenler</p>
+                    <p class="footer-host-title">Aileleri</p>
+                    <p class="footer-host-names"><strong>[Gelin Annesi] &amp; [Gelin Babası] - [Damat Annesi] &amp; [Damat Babası]</strong></p>
+                </div>
+            </div>
+            <div class="spacer-100"></div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

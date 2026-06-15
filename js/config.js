@@ -1,1 +1,9 @@
-/* config will be added in Task 4 */
+// Düğün Davetiyesi - Ayarlar
+//
+// countdownTarget: Geri sayımın hedef tarihi/saati.
+// Format: "Ay Gün, Yıl Saat:Dakika:Saniye" (örnek: "Sep 12, 2026 20:00:00")
+// Not: Bu tarih, index.html'deki "Merasim Detayları" bölümünde
+// [DÜĞÜN TARİHİ] / [DÜĞÜN SAATİ] olarak yazılan değerlerle aynı olmalıdır.
+const WEDDING_CONFIG = {
+    countdownTarget: "Sep 12, 2026 20:00:00"
+};

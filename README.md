@@ -21,6 +21,14 @@ bilgilerinizle değiştirin:
 | `[KINA MEKAN ADI]`, `[KINA ADRES]` | "Merasim Detayları" → Kına kartı |
 | `[DÜĞÜN SAATİ]`, `[DÜĞÜN MEKAN ADI]`, `[DÜĞÜN ADRES]` | "Merasim Detayları" → Düğün kartı |
 
+> **Not:** Yukarıdaki tabloda kısaltılmış olarak gösterilen alıntı metni
+> (`[Buraya birbirinize dair özel bir söz...]`), `index.html` içinde
+> `hero-quote` class'ına sahip `<p>` etiketi içinde 3 satır halinde ve
+> `<br>` etiketleriyle ayrılmış olarak yer alır. Bu kısmı tek satırlık bir
+> "Bul ve Değiştir" ile değil, ilgili `<p class="hero-quote ...">...</p>`
+> bloğunun tamamını bularak ve içeriğini kendi 3 satırlık sözünüzle
+> değiştirerek düzenleyin.
+
 ## 2. Fotoğraf ve Müzik Ekleme
 
 - `assets/images/background.jpg` — arka plan fotoğrafı (zaten eklendi).

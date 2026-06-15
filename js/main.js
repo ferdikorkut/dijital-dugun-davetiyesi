@@ -77,11 +77,6 @@ function openInvitation() {
 
 // --- Scroll-triggered parallax & reveals ---
 function initParallax() {
-    gsap.to("#img-main", {
-        scrollTrigger: { trigger: "body", start: "top top", end: "bottom bottom", scrub: 1 },
-        y: 100
-    });
-
     gsap.from(".gs-anim-left", {
         scrollTrigger: { trigger: ".mini-couple-grid", start: "top 85%" },
         x: -30, opacity: 0, duration: 1, ease: "back.out(1.2)"

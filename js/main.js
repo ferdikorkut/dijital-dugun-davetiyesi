@@ -49,9 +49,9 @@ function openInvitation() {
 
     if (bgOpening) {
         tl.to(bgOpening, {
-            yPercent: -100,
+            opacity: 0,
             duration: 1.5,
-            ease: "power4.inOut",
+            ease: "power2.inOut",
             onComplete: () => bgOpening.remove()
         }, "-=0.4");
     }

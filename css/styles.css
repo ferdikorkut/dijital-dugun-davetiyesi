@@ -74,6 +74,7 @@ h1, h2, h3 { font-family: 'Cinzel Decorative', cursive; color: var(--gold-light)
     border-radius: 50px;
     background: rgba(0,0,0,0.4);
     backdrop-filter: blur(8px);
+    max-width: 90vw;
 }
 .guest-label { margin: 0; font-size: 0.8rem; }
 .guest-name {
@@ -82,6 +83,8 @@ h1, h2, h3 { font-family: 'Cinzel Decorative', cursive; color: var(--gold-light)
     color: var(--gold-light);
     margin: 5px 0 0 0;
     text-transform: capitalize;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .btn-open {

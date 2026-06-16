@@ -16,6 +16,8 @@ try {
 gsap.registerPlugin(ScrollTrigger);
 
 document.body.style.overflow = 'hidden';
+document.body.style.position = 'fixed';
+document.body.style.width = '100%';
 
 // --- Opening sequence ---
 let invitationOpened = false;
@@ -24,6 +26,9 @@ function openInvitation() {
     if (invitationOpened) return;
     invitationOpened = true;
     document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.width = '';
+    window.scrollTo(0, 0);
 
     const openingContent = document.querySelector("#opening-content");
     const bgOpening = document.querySelector("#bg-opening");

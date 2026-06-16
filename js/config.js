@@ -5,5 +5,5 @@
 // Not: Bu tarih, index.html'deki "Merasim Detayları" bölümünde
 // [DÜĞÜN TARİHİ] / [DÜĞÜN SAATİ] olarak yazılan değerlerle aynı olmalıdır.
 const WEDDING_CONFIG = {
-    countdownTarget: "Sep 12, 2026 20:00:00"
+    countdownTarget: "Aug 9, 2026 20:00:00"
 };

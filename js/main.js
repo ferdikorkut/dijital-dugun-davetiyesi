@@ -15,12 +15,15 @@ try {
 
 gsap.registerPlugin(ScrollTrigger);
 
+document.body.style.overflow = 'hidden';
+
 // --- Opening sequence ---
 let invitationOpened = false;
 
 function openInvitation() {
     if (invitationOpened) return;
     invitationOpened = true;
+    document.body.style.overflow = '';
 
     const openingContent = document.querySelector("#opening-content");
     const bgOpening = document.querySelector("#bg-opening");

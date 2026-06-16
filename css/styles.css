@@ -537,24 +537,6 @@ h3 {
     filter: grayscale(20%) brightness(0.9);
 }
 
-.gallery-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.8), rgba(142, 110, 34, 0.8));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.gallery-overlay i {
-    font-size: 2rem;
-    color: #fff;
-    transform: scale(0);
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
 .gallery-item:hover .gallery-frame {
     border-color: var(--gold-mid);
 }
@@ -562,14 +544,6 @@ h3 {
 .gallery-item:hover .gallery-frame img {
     transform: scale(1.15);
     filter: grayscale(0%) brightness(1);
-}
-
-.gallery-item:hover .gallery-overlay {
-    opacity: 1;
-}
-
-.gallery-item:hover .gallery-overlay i {
-    transform: scale(1);
 }
 
 @media (max-width: 640px) {

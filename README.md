@@ -69,10 +69,3 @@ https://kullaniciadi.github.io/dijital-dugun-davetiyesi/?to=Ayşe%20Teyze
 
 Eklenmezse varsayılan olarak "Değerli Dostumuz" gösterilir.
 
-## 6. GitHub Pages'te Yayınlama
-
-1. GitHub'da bu reponun **Settings → Pages** sayfasına gidin
-2. "Source" altında **Deploy from a branch** seçeneğini seçin
-3. Branch olarak **main**, klasör olarak **/ (root)** seçip kaydedin
-4. Birkaç dakika içinde site `https://<kullaniciadi>.github.io/<repo-adi>/`
-   adresinde yayında olur
